@@ -1,5 +1,5 @@
 {% set name = "gwtrigfind" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 161c24ba4a32c3ae3b7a045fb147c26f17d168f33f3ea392c37f4391ebaee84a
+  sha256: 6caf0d66135e90977e2d8529fef5da0ecff4e00830e1b2ebbe9fcd5f229b3e8d
 
 build:
   number: 0
