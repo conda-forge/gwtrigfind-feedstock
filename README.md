@@ -3,9 +3,9 @@ About gwtrigfind-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gwtrigfind-feedstock-eg-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/gwpy/gwtrigfind
+Home: https://git.ligo.org/detchar/tools/gwtrigfind
 
-Package license: GPLv3
+Package license: GPL-3.0-or-later
 
 Summary: Utility to find files archived by GW event trigger generators
 
