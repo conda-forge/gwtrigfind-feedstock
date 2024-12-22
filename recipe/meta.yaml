@@ -6,11 +6,11 @@ package:
   version: "{{ version }}"
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 8a726695bbb9f4c1b769c175d15f8157075b2ef181068c89fa951c4c8bc84233
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - gwtrigfind = gwtrigfind.cli:main
@@ -18,19 +18,20 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
     - gpstime
     - ligo-segments >=1.0.0
-    - python >=3.9
+    - python >={{ python_min }}
 
 test:
   imports:
     - gwtrigfind
   requires:
     - pytest
+    - python {{ python_min }}
   commands:
     - gwtrigfind --help
     - python -m gwtrigfind --help
