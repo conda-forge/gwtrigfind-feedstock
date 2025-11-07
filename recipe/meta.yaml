@@ -1,5 +1,5 @@
 {% set name = "gwtrigfind" %}
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e3d0b2700cd5aa01d0fb22e23ffb3365a99bbc8c96b18506d5451c9abcb7d3b5
+  sha256: c656b8fb4fc6f4089528a81211a3e7ac66ff2fb269e1db2b1d96ba4a8194f0e3
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - setuptools
   run:
     - gpstime
-    - ligo-segments >=1.0.0
+    - igwn-segments >=1.0.0
     - python >={{ python_min }}
 
 test:
